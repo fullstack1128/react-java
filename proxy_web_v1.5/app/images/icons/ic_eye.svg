@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_remove_red_eye</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Admin-Bank-danh-sach-y/c-vay-" transform="translate(-1331.000000, -256.000000)">
+            <g id="ic_remove_red_eye" transform="translate(1331.000000, 253.000000)">
+                <g id="Icon-24px">
+                    <polygon id="Shape" points="0 0 20 0 20 20 0 20"></polygon>
+                    <path d="M10,3.75 C5.83333333,3.75 2.275,6.34166667 0.833333333,10 C2.275,13.6583333 5.83333333,16.25 10,16.25 C14.1666667,16.25 17.725,13.6583333 19.1666667,10 C17.725,6.34166667 14.1666667,3.75 10,3.75 L10,3.75 Z M10,14.1666667 C7.7,14.1666667 5.83333333,12.3 5.83333333,10 C5.83333333,7.7 7.7,5.83333333 10,5.83333333 C12.3,5.83333333 14.1666667,7.7 14.1666667,10 C14.1666667,12.3 12.3,14.1666667 10,14.1666667 L10,14.1666667 Z M10,7.5 C8.61666667,7.5 7.5,8.61666667 7.5,10 C7.5,11.3833333 8.61666667,12.5 10,12.5 C11.3833333,12.5 12.5,11.3833333 12.5,10 C12.5,8.61666667 11.3833333,7.5 10,7.5 L10,7.5 Z" id="Shape" fill="#000000"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

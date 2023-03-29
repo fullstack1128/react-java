@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="28px" viewBox="0 0 23 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>atm_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-20.6%" y="-15.2%" width="152.9%" height="139.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="atm_icon" filter="url(#filter-1)" transform="translate(2.000000, 2.000000)">
+            <g id="Oval-13">
+                <g id="path-1-link" fill="#000000" fill-rule="nonzero">
+                    <path d="M8.24563107,23 C13.8391586,16.2741995 16.6359223,11.3800695 16.6359223,8.31761006 C16.6359223,3.72392087 12.9118443,0 8.31796117,0 C3.72407806,0 0,3.72392087 0,8.31761006 C0,11.3800695 2.74854369,16.2741995 8.24563107,23 Z" id="path-1"></path>
+                </g>
+                <g id="path-1-link" fill="#DB4437" stroke="#FFFFFF">
+                    <path d="M8.24563107,23 C13.8391586,16.2741995 16.6359223,11.3800695 16.6359223,8.31761006 C16.6359223,3.72392087 12.9118443,0 8.31796117,0 C3.72407806,0 0,3.72392087 0,8.31761006 C0,11.3800695 2.74854369,16.2741995 8.24563107,23 Z" id="path-1"></path>
+                </g>
+            </g>
+            <path d="M5.08,11 L4.76,9.672 L3.12,9.672 L2.792,11 L2.064,11 L3.488,5.336 L4.44,5.336 L5.832,11 L5.08,11 Z M3.968,6.008 L3.936,6.008 L3.216,9.104 L4.664,9.104 L3.968,6.008 Z M7.688,5.952 L7.688,11 L6.976,11 L6.976,5.952 L5.896,5.952 L5.896,5.336 L8.768,5.336 L8.768,5.952 L7.688,5.952 Z M13.264,11 L13.264,6.312 L13.24,6.312 L11.976,11 L11.328,11 L10.08,6.312 L10.056,6.312 L10.056,11 L9.392,11 L9.392,5.336 L10.448,5.336 L11.656,9.832 L11.688,9.832 L12.872,5.336 L13.976,5.336 L13.976,11 L13.264,11 Z" id="ATM" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

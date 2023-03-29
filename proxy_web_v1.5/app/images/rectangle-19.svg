@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="60px" viewBox="0 0 200 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>F3D73E50-19E3-4B0E-AF8B-9413682BD467</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="620" y="1389" width="200" height="60"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-620.000000, -1389.000000)">
+            <rect id="Rectangle-3" fill="#F4F4F4" x="0" y="0" width="1440" height="1870"></rect>
+            <g id="Rectangle-19">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#D8D8D8" stroke-width="1" x="620.5" y="1389.5" width="199" height="59"></rect>
+            </g>
+            <text id="View-all" opacity="0.300000012" font-family="Avenir-Heavy, Avenir" font-size="18" font-weight="600" fill="#000000">
+                <tspan x="690" y="1426">View all</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

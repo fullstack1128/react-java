@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>48795132-2DE5-4353-B8C2-D7BBEAC4199F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="806" y="299" width="509" height="564"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Detail" transform="translate(-1053.000000, -328.000000)">
+            <rect id="Rectangle-3" fill="#F4F4F4" x="0" y="0" width="1440" height="1870"></rect>
+            <g id="Rectangle-4">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#D8D8D8" stroke-width="1" x="806.5" y="299.5" width="508" height="563"></rect>
+            </g>
+            <g id="plus-button" transform="translate(1053.000000, 328.000000)" fill="#010002" fill-rule="nonzero">
+                <path d="M9.705625,19.411875 C4.35375,19.411875 0,15.0575 0,9.705625 C0,4.35375 4.35375,0 9.705625,0 C15.0575,0 19.41125,4.35375 19.41125,9.705625 C19.411875,15.0575 15.0575,19.411875 9.705625,19.411875 Z M9.705625,1.10875 C4.965,1.10875 1.10875,4.965625 1.10875,9.705625 C1.10875,14.445625 4.965,18.301875 9.705625,18.301875 C14.445625,18.301875 18.301875,14.445625 18.301875,9.705625 C18.301875,4.965625 14.445625,1.10875 9.705625,1.10875 Z" id="Shape"></path>
+                <path d="M13.5325,10.26 L5.87875,10.26 C5.5725,10.26 5.32375,10.0125 5.32375,9.705625 C5.32375,9.399375 5.571875,9.150625 5.87875,9.150625 L13.5325,9.150625 C13.83875,9.150625 14.086875,9.399375 14.086875,9.705625 C14.086875,10.0125 13.839375,10.26 13.5325,10.26 Z" id="Shape"></path>
+                <path d="M9.705625,14.086875 C9.399375,14.086875 9.150625,13.83875 9.150625,13.5325 L9.150625,5.87875 C9.150625,5.5725 9.399375,5.32375 9.705625,5.32375 C10.011875,5.32375 10.26,5.5725 10.26,5.87875 L10.26,13.5325 C10.26,13.839375 10.0125,14.086875 9.705625,14.086875 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

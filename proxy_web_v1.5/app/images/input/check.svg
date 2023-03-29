@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-checkbox </title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ic-checkbox-" stroke="none" stroke-width="1" fill="#979797" fill-rule="evenodd">
+        <path d="M9.33333333,15.4095879 L18.4825718,6.26034953 C18.8297045,5.91321682 19.3925178,5.91321682 19.7396505,6.26034953 C20.0867832,6.60748223 20.0867832,7.17029555 19.7396505,7.51742825 L9.96187269,17.295206 C9.61473999,17.6423387 9.05192668,17.6423387 8.70479397,17.295206 L4.26034953,12.8507616 C3.91321682,12.5036289 3.91321682,11.9408156 4.26034953,11.5936829 C4.60748223,11.2465502 5.17029555,11.2465502 5.51742825,11.5936829 L9.33333333,15.4095879 Z" id="Oval" fill="#2B3037" fill-rule="nonzero"></path>
+    </g>
+</svg>

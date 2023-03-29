@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="30px" viewBox="0 0 15 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>35674BF7-4B1C-45E8-8212-BA0B84F6FEB7</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-map" transform="translate(-998.000000, -527.000000)">
+            <g id="Group-6" transform="translate(998.000000, 527.000000)">
+                <g id="Group" fill="#DB4437">
+                    <circle id="Oval-5" cx="7.5" cy="7.5" r="7.5"></circle>
+                    <polygon id="Path-11" points="2 13 7.66836735 19 13 13"></polygon>
+                </g>
+                <text id="ATM" font-family="AvenirNextCondensed-Regular, Avenir Next Condensed" font-size="6" font-style="condensed" font-weight="normal" letter-spacing="-0.22857143" fill="#FFFFFF">
+                    <tspan x="1" y="10">ATM</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

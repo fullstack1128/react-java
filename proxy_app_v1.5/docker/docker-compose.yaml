@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  eu-proxy-db-service:
+    image: postgres:12
+    restart: unless-stopped
+    container_name: eu-proxy-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: eu-proxy-db
+    ports:
+      - 5432:5432
+    volumes:
+      - eu-proxy-db:/var/lib/postgresql/data:rw
+volumes:
+  eu-proxy-db: {}

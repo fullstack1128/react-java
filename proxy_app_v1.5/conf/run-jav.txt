@@ -1,0 +1,1 @@
+nohup $JAVA_HOME/bin/java $JVM_ARGS -jar $packet --spring.config.location=./config/application.yaml > $proxy_log_file 2>&1 &    

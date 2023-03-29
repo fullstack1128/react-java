@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>383A5072-DD5B-4849-B5A2-5E67A8918093</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="806" y="299" width="509" height="564"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Detail" transform="translate(-841.000000, -331.000000)">
+            <rect id="Rectangle-3" fill="#F4F4F4" x="0" y="0" width="1440" height="1870"></rect>
+            <g id="Rectangle-4">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#D8D8D8" stroke-width="1" x="806.5" y="299.5" width="508" height="563"></rect>
+            </g>
+            <path d="M848.992683,346 C853.323521,342.925895 855.490182,340.114031 856.50904,337.969218 C857.699365,335.463211 856.66394,332.356667 854.066818,331.314246 C851.014109,330.089456 848.992683,332.915223 848.992683,332.915223 C848.992683,332.915223 846.985615,330.082096 843.933182,331.307431 C841.33606,332.349852 840.300635,335.456396 841.49096,337.962403 C842.509818,340.106944 844.661845,342.926168 848.992683,346 Z" id="Shape" fill="#E64C3C" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

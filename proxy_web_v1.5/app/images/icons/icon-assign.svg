@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>44DBA290-5015-40C5-82A1-BCE0AC7A4B5B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20" rx="4"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chi-tiet" transform="translate(-1119.000000, -111.000000)">
+            <g id="Group-3" transform="translate(1119.000000, 111.000000)">
+                <g id="Rectangle-110">
+                    <use fill="#557B2F" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#557B2F" stroke-width="1" x="0.5" y="0.5" width="19" height="19" rx="4"></rect>
+                </g>
+                <g id="ic_swap_horiz" opacity="0.699999988" transform="translate(2.580645, 1.935484)">
+                    <g id="Icon-24px">
+                        <path d="M4.50967742,7.09677419 L1.93548387,9.67741935 L4.50967742,12.2580645 L4.50967742,10.3225806 L9.03225806,10.3225806 L9.03225806,9.03225806 L4.50967742,9.03225806 L4.50967742,7.09677419 L4.50967742,7.09677419 Z M13.5483871,5.80645161 L10.9741935,3.22580645 L10.9741935,5.16129032 L6.4516129,5.16129032 L6.4516129,6.4516129 L10.9741935,6.4516129 L10.9741935,8.38709677 L13.5483871,5.80645161 L13.5483871,5.80645161 Z" id="Shape" fill="#FFFFFF"></path>
+                        <polygon id="Shape" points="0 0 15.483871 0 15.483871 15.483871 0 15.483871"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

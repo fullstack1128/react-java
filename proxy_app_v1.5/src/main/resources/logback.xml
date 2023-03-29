@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="DEV_HOME" value="./logs" />
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss,SSS} [[%thread]] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE-AUDIT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${DEV_HOME}/application.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [[%thread]] %-5level %logger{36} - %msg%n</Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${DEV_HOME}/application.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>100MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+    <appender name="SQL-AUDIT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${DEV_HOME}/SQL/sql.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [[%thread]] %-5level %logger{36} - %msg%n</Pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${DEV_HOME}/SQL/sql.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>100MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+    <logger name="sql" level="DEBUG" additivity="false">
+        <appender-ref ref="SQL-AUDIT"/>
+    </logger>
+    <root level="DEBUG">
+        <appender-ref ref="FILE-AUDIT" />
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

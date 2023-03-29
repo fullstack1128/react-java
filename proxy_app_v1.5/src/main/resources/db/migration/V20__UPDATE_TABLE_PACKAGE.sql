@@ -1,0 +1,2 @@
+ALTER TABLE packages
+    ADD COLUMN IF NOT EXISTS content TEXT;

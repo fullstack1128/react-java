@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:12:///rune-hunter-db
+    username: admin
+    password: secret
+    jpa:
+      show-sql: true
+      properties:
+        hibernate.format_sql: true
+  flyway:
+    enabled: true
+
+logging.level:
+  com.runehunter: DEBUG
+  org.springframework: DEBUG
+
+

@@ -1,0 +1,215 @@
+spring:
+  application:
+    name: 4gproxy.nl
+    url: http://localhost:3000
+  servlet:
+    path: ${BASE_PATH:}
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    time-zone: ${app.timezone}
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+    
+  mail:
+    host: smtp.mailtrap.io
+    port: 587
+    username: "a913dc1225d300"
+    password: "f6481fc5386120"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+springdoc:
+  api-docs:
+    enabled: false
+
+server:
+  servlet:
+    context-path: ${SERVER_SERVLET_CONTEXT_PATH:/neoproxy}
+  port: ${APP_PORT:8080}
+  ip: 18.195.167.166
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: health,beans,loggers,env,scheduledtasks,metrics
+  endpoint:
+    health:
+      group:
+        liveness:
+          include: "livenessState"
+        readiness:
+          include: "readinessState,diskSpace,db"
+      show-details: always
+      show-components: always
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+
+app:
+  timezone: UTC
+  jwt:
+    secret: ${RUNE_HUNTER_IN_GAME_JWT_SECRET:jwt-secret-value}
+    token-validity: 3600 # second
+    refresh-token-validity: 86400 # second
+  scheduler:
+    modemSyncCron: 0 15 10 * * ?
+    checkTopupStatusCron: 0 0 0 * * ?
+    checkLicenseExpiredCron: 0 0 0 * * ?
+    remindLicenseExpiredCron: 0 0 0 * * ?
+    autoRotationIpCron: 0 0 0 * * ?
+  thread:
+    corePoolSize: 50
+    maxPoolSize: 60
+    queueCapacity: 100
+  xproxy-configuration:
+    infoList:
+      url: /api/v1/info_list
+      method: GET
+      retryWhenTimeout: true
+      retriedTimes: 0
+      retriedCodes: 500
+      requestHeaders:
+        Content-Type: "application/json"
+    sharedProxies:
+      url: /selling/shared_proxies?page=1&limit=1000
+      method: GET
+      retryWhenTimeout: true
+      retriedTimes: 2
+      retriedCodes: 500
+      requestHeaders:
+        Content-Type: "application/json"
+    generatePort:
+      url: /selling/generate
+      method: POST
+      retryWhenTimeout: true
+      retriedTimes: 0
+      retriedCodes: 500
+      requestHeaders:
+        Content-Type: "application/json"
+    bulkEdit:
+      url: /selling/bulk_edit
+      method: POST
+      retryWhenTimeout: true
+      retriedTimes: 0
+      retriedCodes: 500
+      requestHeaders:
+        Content-Type: "application/json"
+    resetDataCounter:
+      url: /selling/reset_data_counter
+      method: POST
+      retryWhenTimeout: true
+      retriedTimes: 0
+      retriedCodes: 500
+      requestHeaders:
+        Content-Type: "application/json"
+    resetPort:
+      url: /reset
+      method: GET
+      retryWhenTimeout: true
+      retriedTimes: 0
+      retriedCodes: 500
+      requestHeaders:
+        Content-Type: "application/json"
+    rebootPort:
+      url: /api/v1/reboot/proxy
+      method: GET
+      retryWhenTimeout: true
+      retriedTimes: 0
+      retriedCodes: 500
+      requestHeaders:
+        Content-Type: "application/json"
+    getListPosition:
+      url: api/min/get-list-position
+      method: GET
+      retryWhenTimeout: true
+      retriedTimes: 3
+      retriedCodes: 500
+      requestHeaders:
+        Content-Type: "application/json"
+  nowpayment-configuration:
+    getPaymentStatusCron: 0/30 * * * * ?
+    currencies: ['btc', 'usdt', 'usdterc20', 'usdttrc20', 'usdtbsc', 'ltc', 'busd']
+    availableCurrencies:
+      url: https://api-sandbox.nowpayments.io/v1/currencies
+      method: GET
+      statusSuccessCodes: [200, 201]
+      requestHeaders:
+        Content-Type: "application/json"
+    minimumAmount:
+      url: https://api-sandbox.nowpayments.io/v1/min-amount
+      method: GET
+      statusSuccessCodes: [200, 201]
+      requestHeaders:
+        Content-Type: "application/json"
+    estimatedPrice:
+      url: https://api-sandbox.nowpayments.io/v1/estimate
+      method: GET
+      statusSuccessCodes: [200, 201]
+      requestHeaders:
+        Content-Type: "application/json"
+    payment:
+      url: https://api-sandbox.nowpayments.io/v1/payment
+      method: POST
+      statusSuccessCodes: [200, 201]
+      requestHeaders:
+        Content-Type: "application/json"
+    paymentStatus:
+      url: https://api-sandbox.nowpayments.io/v1/payment
+      statusSuccessCodes: [200, 201]
+      method: GET
+      requestHeaders:
+        Content-Type: "application/json"
+
+logging.level:
+  com.neoproxy.pro: INFO
+  org.springframework: INFO
+  org.hibernate: INFO
+
+--- # Production Config
+
+spring:
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888/}
+    activate:
+      on-profile: live
+
+--- # Dev
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    #  url: jdbc:postgresql://localhost:5432/eu-proxy-db
+    #  username: admin
+    #  password: admin
+#    url: jdbc:postgresql://proxy-db-main.czqwenhbvqwc.eu-central-1.rds.amazonaws.com:5432/postgres
+#    username: proxydb
+#    password: herDQ2MuALT6EwHqe
+    url: jdbc:postgresql://proxy-db-main.centztzaa0fg.eu-west-2.rds.amazonaws.com:5432/postgres
+    username: proxydb
+    password: huKpaPS8vdJPay39
+  jpa:
+    show-sql: false
+    properties:
+      hibernate.format_sql: false

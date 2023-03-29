@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello WebSocket</title>
+    <!-- <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="/main.css" rel="stylesheet"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="app.js"></script>
+
+    <style>
+    tr {
+      outline: thin solid;
+    }
+    td{
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="connect">WebSocket connection:</label>
+                    <div class="form-group">
+                        <label for="user-uuid">user uuid</label>
+                        <input type="text" id="user-uuid" class="form-control" placeholder="Enter token here...">
+                    </div>
+                    <div class="form-group">
+                        <label for="jwt-token">Jwt token</label>
+                        <input type="text" id="jwt-token" class="form-control" placeholder="Enter token here...">
+                    </div>
+                    <button id="connect" class="btn btn-default" type="submit">Connect</button>
+                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect
+                    </button>
+                </div>
+            </form>
+        </div>
+        <br/>
+
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="deck-uuid">deck uuid</label>
+                    <input type="text" id="deck-uuid" class="form-control">
+                </div>
+                <button id="join-game" class="btn btn-default" type="submit">Find Match</button>
+            </form>
+        </div>
+
+        <br/>
+
+        <div class="col-md-6">
+            <form class="form-inline">
+                <button id="leave-room" class="btn btn-default" type="submit">Leave room</button>
+            </form>
+        </div>
+
+        <br/>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Logs:</h3>
+            <table id="conversation" class="table table-striped">
+                <tbody id="messages">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

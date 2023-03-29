@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS licenses
+(
+    id                              BIGSERIAL PRIMARY KEY   NOT NULL,
+    uuid                            UUID                    NOT NULL,
+    start_date                      TIMESTAMP               NOT NULL,
+    expired_date                    TIMESTAMP               NOT NULL,
+    location                        VARCHAR(50)                     ,
+    ISP                             VARCHAR(50)                     ,
+    status                          VARCHAR(50)             NOT NULL,
+    customer_id                     BIGINT                          ,
+    http_proxy_id                   BIGINT                          ,
+    sock_proxy_id                   BIGINT                          ,
+    package_id                      BIGINT                          ,
+    transaction_id                  BIGINT                          ,
+    auth_user                       VARCHAR(50)                     ,
+    ip_whitelist                    VARCHAR(50)                     ,
+    last_change_ip                  TIMESTAMP                       ,
+    last_change_location            TIMESTAMP                       ,
+    last_change_isp                 TIMESTAMP                       ,
+    note                            VARCHAR(50)                     ,
+    modem_type                      VARCHAR(10)     default 'MOBILE',
+    created_at                      TIMESTAMP               NOT NULL,
+    updated_at                      TIMESTAMP               NOT NULL,
+    UNIQUE (uuid),
+    UNIQUE (http_proxy_id),
+    UNIQUE (sock_proxy_id)
+);

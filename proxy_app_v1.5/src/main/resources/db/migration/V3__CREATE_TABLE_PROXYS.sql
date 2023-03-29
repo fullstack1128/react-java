@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS proxys
+(
+    id                              BIGSERIAL PRIMARY KEY   NOT NULL,
+    uuid                            UUID                    NOT NULL,
+    modem_id                        BIGINT                  NOT NULL,
+    raw                             TEXT                    NOT NULL,
+    xproxy_id                       INT                             ,
+    status                          VARCHAR(20)             NOT NULL,
+    xproxy_position                 INT                     NOT NULL,
+    shared_port                     INT                             ,
+    port_type                       VARCHAR(50)                     ,
+    authentication_users            VARCHAR(100)                    ,
+    authorization_ips               VARCHAR(100)                    ,
+    sale_status                     VARCHAR(10)             NOT NULL,
+    counter_ul_used_bytes           BIGINT                         ,
+    counter_dl_used_bytes           BIGINT                         ,
+    counter_all_used_bytes          BIGINT                         ,
+    counter_all_updated             VARCHAR(50)                     ,
+    web_blacklist                   VARCHAR(100)                    ,
+    web_whitelist                   VARCHAR(100)                    ,
+    host                            VARCHAR(100)                    ,
+    modem_type                      VARCHAR(10)     default 'MOBILE',
+    created_at                      TIMESTAMP               NOT NULL,
+    updated_at                      TIMESTAMP               NOT NULL,
+    UNIQUE (uuid)
+);

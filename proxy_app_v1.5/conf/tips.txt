@@ -1,0 +1,6 @@
+Apache Mod_proxy '[Error] (13)Permission Denied' Error on RHEL
+=>
+To fix this, first test by setting the boolean dynamically (not permanent yet):
+$ sudo  /usr/sbin/setsebool httpd_can_network_connect 1
+If that works, you can set it so that the default policy is changed and this setting will persist across reboots:
+$ sudo /usr/sbin/setsebool -P httpd_can_network_connect 1

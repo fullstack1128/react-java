@@ -1,0 +1,16 @@
+{
+  "exclude": [
+      "node_modules"
+  ],
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "es2015",
+    "baseUrl": "./app",
+    // "jsx": "react",
+    "paths": {
+      // "components/*": ["./app/components/*"],
+      "**/*": ["./app/**/*"],
+    }
+  },
+  "checkJs": true,
+}
